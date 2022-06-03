@@ -7,5 +7,37 @@
     <title>Quiz App - Create</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1 class="heading heading-primary">Create</h1>
+      <form action="">
+        <label for="name">Add question</label>
+        <input
+          id="question"
+          type="text"
+          minlength="10"
+          maxlength="20"
+          required
+        />
+
+        <label for="name">Add answer</label>
+        <input id="answer" type="text" required />
+
+        <label for="name">Add tags *</label>
+        <p class="tags-hint">divided by comma</p>
+        <input id="tags" type="text" required />
+        <button>Submit</button>
+      </form>
+    </header>
+    <footer>
+      <nav class="navigation">
+        <ul class="navbar">
+          <li class="navbar__item"><a href="index.html"></a>A</li>
+          <li class="navbar__item"><a href="bookmarks.html"></a>B</li>
+          <li class="navbar__item"><a href="create.html"></a>C</li>
+          <li class="navbar__item"><a href="profile.html"></a>C</li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
