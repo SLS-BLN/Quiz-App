@@ -31,10 +31,19 @@
   fill: var(--color-secondary-light);
 }
 
-.question-card__question {
+.question-card__question,
+.question-card__answer {
   width: 80%;
   font-size: 2rem;
   text-align: center;
+}
+
+.question-card__answer {
+  margin-bottom: 4rem;
+}
+
+.hide-answer {
+  display: none;
 }
 
 .question-card__tags {

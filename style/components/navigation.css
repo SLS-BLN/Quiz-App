@@ -11,8 +11,6 @@
   list-style: none;
   position: fixed;
   bottom: 0;
-  /* padding: 5rem 0 3rem; */
-  z-index: 1;
 }
 
 .navbar__item svg {
