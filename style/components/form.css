@@ -1,0 +1,29 @@
+.create__form,
+.create__form--question,
+.create__form--answer,
+.create__form--add-tags {
+  /* absolute centering */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 0;
+  color: var(--font-color-light);
+  font-size: 1.6rem;
+}
+
+.create__form--question,
+.create__form--answer,
+.create__form--add-tags {
+  align-items: flex-start;
+}
+
+.create__form--add-tags p {
+  font-size: 1.2rem;
+}
+
+textarea {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1.5rem;
+}

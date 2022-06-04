@@ -10,3 +10,10 @@
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.11);
   background-color: var(--color-secondary-dark);
 }
+
+.btn__create {
+  font-size: 2.4rem;
+  padding: 1.5rem 4.5rem;
+  border: none;
+  text-transform: uppercase;
+}
