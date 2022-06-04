@@ -1,6 +1,10 @@
-@import "/style/base.css";
+@import "/style/base/base.css";
+@import "/style/base/typography.css";
 
 @import "/style/components/buttons.css";
+@import "/style/components/cards.css";
 @import "/style/components/footer.css";
-@import "/style/components/header.css";
+@import "/style/components/form.css";
 @import "/style/components/navigation.css";
+@import "/style/components/profile.css";
+@import "/style/components/tags.css";

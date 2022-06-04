@@ -1,0 +1,31 @@
+/* GLOBALS */
+html {
+  box-sizing: border-box;
+
+  /* phone - 1rem = 8px; 8/16 = 50% */
+  /* desktop - 1rem = 10px; 10px/16px = 62.5% */
+  font-size: 50%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 1rem;
+}
+
+/* FLOAT LAYOUT */
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+/* VARIABLES */
+:root {
+  --font-color: rgba(0, 0, 0, 0.845);
+}
