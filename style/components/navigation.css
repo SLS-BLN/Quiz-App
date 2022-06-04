@@ -1,0 +1,27 @@
+.navigation {
+  z-index: 2;
+}
+
+.navbar {
+  background-color: var(--bg-color-primary-light);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  list-style: none;
+  position: fixed;
+  bottom: 0;
+  /* padding: 5rem 0 3rem; */
+  z-index: 1;
+}
+
+.navbar__item svg {
+  width: 12rem;
+  height: 12rem;
+  padding: 3rem 0;
+}
+
+.navbar__item:hover,
+.navbar__item:active {
+  background-color: var(--bg-color-primary-dark);
+}

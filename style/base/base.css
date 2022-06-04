@@ -15,8 +15,11 @@ html {
   margin: 0;
 }
 
-body {
-  padding: 1rem;
+.container {
+  padding: 0 3rem;
+
+  /* show last card */
+  margin-bottom: 20rem;
 }
 
 /* FLOAT LAYOUT */
@@ -28,4 +31,14 @@ body {
 /* VARIABLES */
 :root {
   --font-color: rgba(0, 0, 0, 0.845);
+  --font-color-light: rgb(247, 247, 247);
+  --color-primary: #228be6;
+  --color-primary-dark: #1971c2;
+  --color-primary-light: #4dabf7;
+  --bg-color-primary: #d0ebff;
+  --bg-color-primary-dark: #a5d8ff;
+  --bg-color-primary-light: #e7f5ff;
+  --color-secondary: #ff922b;
+  --color-secondary-dark: #f76707;
+  --color-secondary-light: #ffc078;
 }

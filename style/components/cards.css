@@ -1,0 +1,60 @@
+.question-card {
+  width: 90%;
+  max-width: 40rem;
+  min-width: 34rem;
+  background: linear-gradient(
+    to bottom,
+    var(--bg-color-primary-light),
+    var(--bg-color-primary-dark)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--font-color);
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 4rem auto;
+  position: relative;
+}
+
+.question-card svg {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  right: 2rem;
+  top: -2rem;
+  z-index: 1;
+}
+
+.icon--focus {
+  fill: var(--color-secondary-light);
+}
+
+.question-card__question {
+  width: 80%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.question-card__tags {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  list-style: none;
+}
+
+.question-card__tags li {
+  font-size: 1.2rem;
+  padding: 0.15rem 1.25rem;
+  margin: 0 1rem;
+  color: white;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+}
+
+.question-card__tags li:hover,
+li:active {
+  background-color: var(--color-primary-dark);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.11);
+}

@@ -1,0 +1,9 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-header {
+  width: 8rem;
+  fill: var(--font-color-light);
+}
