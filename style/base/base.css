@@ -1,4 +1,3 @@
-/* GLOBALS */
 html {
   box-sizing: border-box;
 
@@ -17,18 +16,14 @@ html {
 
 .container {
   padding: 0 3rem;
-
-  /* show last card */
   margin-bottom: 20rem;
 }
 
-/* FLOAT LAYOUT */
 .row {
   max-width: 114rem;
   margin: 0 auto;
 }
 
-/* VARIABLES */
 :root {
   --font-color: rgba(0, 0, 0, 0.845);
   --font-color-light: rgb(247, 247, 247);

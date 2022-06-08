@@ -2,7 +2,6 @@
 .create__form--question,
 .create__form--answer,
 .create__form--add-tags {
-  /* absolute centering */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
