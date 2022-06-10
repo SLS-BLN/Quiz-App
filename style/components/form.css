@@ -21,7 +21,7 @@
   font-size: 1.2rem;
 }
 
-textarea {
+.create__form--textarea {
   font-size: 1.6rem;
   text-align: center;
   padding: 1.5rem;
