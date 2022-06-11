@@ -1,3 +1,22 @@
+// Bookmark toggle Module
+
+function toggleCardBookmark() {
+  const bookmarks = document.querySelectorAll(".question-card--icon");
+  bookmarks.forEach((bookmark) => {
+    bookmark.addEventListener("click", function () {
+      bookmark.classList.toggle("icon--focus");
+    });
+  });
+}
+
+toggleCardBookmark();
+
+// Navigation Module
+
+// 2. on click highlight icon (home, bookmark, create, profile)
+// - add class "icon--focus" to navbar-icon
+// - remove class "icon--focus" from all other navbar-icons
+
 const linkHome = document.querySelector("[data-js=link-home]");
 const linkBookmarked = document.querySelector("[data-js=link-bookmark]");
 const linkCreate = document.querySelector("[data-js=link-create]");
