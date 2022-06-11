@@ -19,6 +19,14 @@ html {
   margin-bottom: 20rem;
 }
 
+.page {
+  display: none;
+}
+
+.page.current {
+  display: block;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
