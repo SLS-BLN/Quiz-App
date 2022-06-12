@@ -27,6 +27,8 @@ function navigation() {
     pageBookmarked.classList.add("current");
     pageCreate.classList.remove("current");
     pageProfile.classList.remove("current");
+    // test fill
+    // linkBookmarked.classList.add("icon--focus");
   });
 
   linkCreate.addEventListener("click", () => {
