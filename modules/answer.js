@@ -1,4 +1,4 @@
-function toggleAnswer() {
+function answer() {
   // select all cards - nodeList
   const cards = document.querySelectorAll(".question-card");
   cards.forEach((card) => {
@@ -8,13 +8,13 @@ function toggleAnswer() {
     answerButton.addEventListener("click", function () {
       answer.classList.toggle("hide-answer");
       // change button text
-      if (answerButton.innerHTML === "Show Answer") {
-        answerButton.innerHTML = "Hide Answer";
+      if (answer.classList.contains("hide-answer")) {
+        answerButton.innerText = "Show Answer";
       } else {
-        answerButton.innerHTML = "Show Answer";
+        answerButton.innerText = "Hide Answer";
       }
     });
   });
 }
 
-export { toggleAnswer };
+export { answer };

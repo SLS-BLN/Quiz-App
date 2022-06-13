@@ -7,6 +7,10 @@
   border: none;
 }
 
+.question-card__button {
+  padding: 1rem 3rem;
+}
+
 .btn:hover {
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.11);
   background-color: var(--color-secondary-dark);

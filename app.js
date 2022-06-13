@@ -1,7 +1,9 @@
+"use strict";
+
 import { toggleCardBookmark } from "./modules/bookmark.js";
 import { navigation } from "./modules/navigation.js";
-import { toggleAnswer } from "./modules/answer.js";
+import { answer } from "./modules/answer.js";
 
 toggleCardBookmark();
 navigation();
-toggleAnswer();
+answer();
