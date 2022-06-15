@@ -2,18 +2,18 @@
 
 function navigation() {
   // nodeList of all main "pages"
-  const pages = document.querySelectorAll(".page");
+  const pages = document.querySelectorAll('.page');
 
   // nodeList of all anchor tags in footer/nav
-  const navLinks = document.querySelectorAll("[data-js=nav-link]");
+  const navLinks = document.querySelectorAll('[data-js=nav-link]');
 
   // nodeItem - h1
-  const headline = document.querySelector("[data-js=headline]");
+  const headline = document.querySelector('[data-js=headline]');
 
   // for each anchor
-  navLinks.forEach((navLink) => {
+  navLinks.forEach(navLink => {
     // add an event listener (click) on each anchor tag
-    navLink.addEventListener("click", () => {
+    navLink.addEventListener('click', () => {
       // create a string - data-js= value of anchor tag / dataset / link
       // put this string in a const
       const selectedPage = document.querySelector(
@@ -22,12 +22,12 @@ function navigation() {
       console.log(selectedPage);
 
       // remove class current of all pages
-      pages.forEach((page) => {
-        page.classList.remove("current");
+      pages.forEach(page => {
+        page.classList.remove('current');
       });
 
       // add class current to selecte page - which has as data-js of ...
-      selectedPage.classList.add("current");
+      selectedPage.classList.add('current');
 
       // set the headline according to selected page
       // headline.textContent = navLink.dataset.headline;
