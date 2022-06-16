@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App - Home</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/images/favicon.svg"
+      sizes="any"
+    />
+    <title>Octoquizzy App - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,8 +21,7 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="heading heading-primary">Octoquizzy</h1>
-      <?xml version="1.0" encoding="iso-8859-1"?>
+      <h1 class="heading heading-primary" data-js="headline">Octoquizzy</h1>
       <svg
         class="icon icon-header"
         xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +37,7 @@
       </svg>
     </header>
 
-    <main class="container">
+    <main class="page current" data-js="home">
       <article class="question-card">
         <h2 class="heading heading-secondary question-card__heading">
           Question:
@@ -43,7 +48,7 @@
           width="192"
           height="192"
           viewBox="0 0 256 256"
-          fill="none"
+          fill="#e3f3ff"
         >
           <path fill="none" d="M0 0h256v256H0z" />
           <path
@@ -57,7 +62,7 @@
         <p class="question-card__question">
           How many legs does an octopus have?
         </p>
-        <buttton class="btn question-card__button">Show Answer</buttton>
+        <button class="btn question-card__button">Show Answer</button>
         <p class="question-card__answer hide-answer">
           Octopuses have six arms and two legs, not eight tentacles as they are
           sometimes mistakenly called.
@@ -69,13 +74,12 @@
           <li>Toxic</li>
         </ul>
       </article>
-
       <article class="question-card">
         <h2 class="heading heading-secondary question-card__heading">
           Question:
         </h2>
         <svg
-          class="question-card-icon icon"
+          class="question-card--icon icon"
           xmlns="http://www.w3.org/2000/svg"
           width="192"
           height="192"
@@ -94,7 +98,10 @@
         <p class="question-card__question">
           What's an octopus's favourite food?
         </p>
-        <buttton class="btn question-card__button">Show Answer</buttton>
+        <button class="btn question-card__button">Show Answer</button>
+        <p class="question-card__answer hide-answer">
+          Octopuses like all food like Pizza and Hamburgers.
+        </p>
         <ul class="question-card__tags">
           <li>Tag-1</li>
           <li>Tag-2</li>
@@ -102,13 +109,12 @@
           <li>Tag-4</li>
         </ul>
       </article>
-
       <article class="question-card">
         <h2 class="heading heading-secondary question-card__heading">
           Question:
         </h2>
         <svg
-          class="question-card-icon icon icon--focus"
+          class="question-card--icon icon icon--focus"
           xmlns="http://www.w3.org/2000/svg"
           width="192"
           height="192"
@@ -127,7 +133,11 @@
         <p class="question-card__question">
           How many eyes does an octopus have?
         </p>
-        <buttton class="btn question-card__button">Show Answer</buttton>
+        <button class="btn question-card__button">Show Answer</button>
+        <p class="question-card__answer hide-answer">
+          Two I suppose. Or maybe four? Who knows. I'm only a web developer, not
+          an expert on octopuses.
+        </p>
         <ul class="question-card__tags">
           <li>Tag-1</li>
           <li>Tag-2</li>
@@ -136,15 +146,156 @@
         </ul>
       </article>
     </main>
+    <main class="page" data-js="bookmark">
+      <article class="question-card">
+        <h2 class="heading heading-secondary question-card__heading">
+          Question:
+        </h2>
+        <svg
+          class="question-card--icon icon icon--focus"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          viewBox="0 0 256 256"
+          fill="#e3f3ff"
+        >
+          <path fill="none" d="M0 0h256v256H0z" />
+          <path
+            d="m192 224-64-40-64 40V48a8 8 0 0 1 8-8h112a8 8 0 0 1 8 8Z"
+            stroke="#000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          />
+        </svg>
+        <p class="question-card__question">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit?
+        </p>
+        <button class="btn question-card__button">Show Answer</button>
+        <p class="question-card__answer hide-answer">
+          Octopuses have six arms and two legs, not eight tentacles as they are
+          sometimes mistakenly called.
+        </p>
+        <ul class="question-card__tags">
+          <li>Tag-1</li>
+          <li>Tag-2</li>
+          <li>Tag-3</li>
+          <li>Tag-4</li>
+        </ul>
+      </article>
+      <article class="question-card">
+        <h2 class="heading heading-secondary question-card__heading">
+          Question:
+        </h2>
+        <svg
+          class="question-card--icon icon icon--focus"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          viewBox="0 0 256 256"
+          fill="#e3f3ff"
+        >
+          <path fill="none" d="M0 0h256v256H0z" />
+          <path
+            d="m192 224-64-40-64 40V48a8 8 0 0 1 8-8h112a8 8 0 0 1 8 8Z"
+            stroke="#000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          />
+        </svg>
+        <p class="question-card__question">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit?
+        </p>
+        <button class="btn question-card__button">Show Answer</button>
+        <p class="question-card__answer hide-answer">
+          Octopuses have six arms and two legs, not eight tentacles as they are
+          sometimes mistakenly called.
+        </p>
+        <ul class="question-card__tags">
+          <li>Tag-1</li>
+          <li>Tag-2</li>
+          <li>Tag-3</li>
+          <li>Tag-4</li>
+        </ul>
+      </article>
+    </main>
+    <main class="page" data-js="create"">
+      <form class="create__form" action="">
+        <div class="create__form--question">
+          <label for="question">Add question</label>
+          <textarea
+            id="question"
+            class="create__form--textarea"
+            type="text"
+            rows="2"
+            cols="25"
+            required
+          >
+          </textarea>
+        </div>
+        <div class="create__form--answer">
+          <label for="answer">Add answer</label>
+          <textarea
+            id="answer"
+            class="create__form--textarea"
+            type="text"
+            rows="2"
+            cols="25"
+            required
+          >
+          </textarea>
+        </div>
+
+        <div class="create__form--add-tags">
+          <label for="name">Add tags *</label>
+          <textarea
+            id="name"
+            class="create__form--textarea"
+            type="text"
+            rows="2"
+            cols="25"
+            required
+          >
+          </textarea>
+          <p class="tags-hint">* divided by comma</p>
+        </div>
+        <button class="btn btn__create">Submit</button>
+      </form>
+    </main>
+    <main class="page" data-js="profile">
+      <div class="profile">
+        <img
+          class="profile__photo"
+          src="/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+          alt="profile photo of Elisa Miller"
+        />
+        <!-- figcaption??? -->
+        <p class="profile__name">Elisa Miller</p>
+        <p class="profile__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
+          excepturi. Quidem vero, aliquid tempora.
+        </p>
+      </div>
+      <article class="skills">
+        <h1 class="heading heading-primary">My Skills</h1>
+        <ul class="skills__tags">
+          <li>Tag-1</li>
+          <li>Tag-2</li>
+          <li>Tag-3</li>
+          <li>Tag-4</li>
+        </ul>
+        <button class="btn btn__profile">Logout</button>
+      </article>
+    </main>
 
     <footer>
       <nav class="navigation">
         <ul class="navbar">
           <li class="navbar__item">
-            <a href="index.html">
+            <a href="#home" data-js="nav-link" data-link="home" data-headline="Octoquizzy">
               <svg
-                id="icon__home"
-                class="icon icon__home icon--focus"
+                class="icon icon__home"
                 xmlns="http://www.w3.org/2000/svg"
                 width="192"
                 height="192"
@@ -163,7 +314,7 @@
             </a>
           </li>
           <li class="navbar__item">
-            <a href="bookmarks.html">
+            <a href="#bookmarked" data-js="nav-link" data-link="bookmark" data-headline="Bookmarked">
               <svg
                 class="icon icon__book icon--focus"
                 xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +335,7 @@
             </a>
           </li>
           <li class="navbar__item">
-            <a href="create.html">
+            <a href="#create" data-js="nav-link" data-link="create" data-headline="Create">
               <svg
                 class="icon icon__create"
                 xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +356,7 @@
             </a>
           </li>
           <li class="navbar__item">
-            <a href="profile.html">
+            <a href="#profile" data-js="nav-link" data-link="profile" data-headline="Profile">
               <svg
                 class="icon icon__user"
                 xmlns="http://www.w3.org/2000/svg"
@@ -236,6 +387,6 @@
         </ul>
       </nav>
     </footer>
-    <script type="javascript" src="js/app.js"></script>
+    <script type="module" src="/app.js"></script>
   </body>
 </html>

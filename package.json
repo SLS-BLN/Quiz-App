@@ -1,0 +1,36 @@
+{
+  "name": "octoquizzy",
+  "version": "1.0.0",
+  "description": "everything about octopuses",
+  "main": "app.js",
+  "scripts": {
+    "eslint": "npx eslint \"**/*.js\"",
+    "htmlhint": "npx htmlhint \"**/*.html\"",
+    "prettier:check": "npx prettier --check .",
+    "prettier:write": "npx prettier --write .",
+    "stylelint": "npx stylelint \"**/*.css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SLS-BLN/Quiz-App.git"
+  },
+  "keywords": [
+    "quiz",
+    "octopus"
+  ],
+  "author": "SLS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SLS-BLN/Quiz-App/issues"
+  },
+  "homepage": "https://github.com/SLS-BLN/Quiz-App#readme",
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "htmlhint": "^1.1.4",
+    "prettier": "^2.7.0",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^26.0.0"
+  }
+}
