@@ -50,8 +50,9 @@
   margin-bottom: 2rem;
 }
 
-.skills__tags li:hover,
-li:active {
+li:active,
+.skills__tags li:hover
+ {
   background-color: var(--color-primary-dark);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.11);
 }

@@ -57,13 +57,14 @@
   font-size: 1.2rem;
   padding: 0.15rem 1.25rem;
   margin: 0 1rem;
-  color: white;
+  color: #ffffff;
   background-color: var(--color-primary);
   border-radius: 5px;
 }
 
-.question-card__tags li:hover,
-li:active {
+li:active, 
+.question-card__tags li:hover
+{
   background-color: var(--color-primary-dark);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.11);
 }

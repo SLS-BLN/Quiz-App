@@ -3,12 +3,13 @@ html {
 
   /* phone - 1rem = 8px; 8/16 = 50% */
   /* desktop - 1rem = 10px; 10px/16px = 62.5% */
+
   font-size: 50%;
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
@@ -34,7 +35,7 @@ html {
 
 :root {
   --font-color: rgba(0, 0, 0, 0.845);
-  --font-color-light: rgb(247, 247, 247);
+  --font-color-light: #f7f7f7;
   --color-primary: #228be6;
   --color-primary-dark: #1971c2;
   --color-primary-light: #4dabf7;
