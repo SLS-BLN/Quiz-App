@@ -29,6 +29,7 @@
 
 .icon--focus {
   fill: var(--color-secondary-light);
+  stroke: var(--color-secondary-light);
 }
 
 .question-card__question,

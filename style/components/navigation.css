@@ -19,4 +19,4 @@
 .navbar__item:hover,
 .navbar__item:active {
   background-color: var(--bg-color-primary-dark);
-}
+};
