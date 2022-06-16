@@ -9,6 +9,8 @@
   /* hard coded - not possible with percentage */
   width: 20rem;
   height: 20rem;
+  object-position: 0 -1.9rem;
+  object-fit: cover;
   grid-column: 2 / 8;
   border-radius: 50%;
 }

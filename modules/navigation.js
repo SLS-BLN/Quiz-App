@@ -6,10 +6,14 @@ function navigation() {
 
   // nodeList of all anchor tags in footer/nav
   const navLinks = document.querySelectorAll('[data-js=nav-link]');
+  // console.log(navLinks);
+  
 
   // nodeItem - h1
   const headline = document.querySelector('[data-js=headline]');
-
+  // console.log(headline);
+  
+  
   // for each anchor
   navLinks.forEach(navLink => {
     // add an event listener (click) on each anchor tag
@@ -18,19 +22,32 @@ function navigation() {
       // put this string in a const
       const selectedPage = document.querySelector(
         `[data-js=${navLink.dataset.link}]`
-      );
-      console.log(selectedPage);
-
+        );
+        // console.log(selectedPage);
+        // console.log(navLink);
+        
       // remove class current of all pages
       pages.forEach(page => {
         page.classList.remove('current');
       });
+      
+      // console.log(navLink);
+      
+
 
       // add class current to selecte page - which has as data-js of ...
       selectedPage.classList.add('current');
-
+      
       // set the headline according to selected page
-      // headline.textContent = navLink.dataset.headline;
+      // returns empty
+      headline.textContent = navLink.dataset.headline;
+      
+      // returns empty
+      // console.log(headline.textContent);
+      
+      // this does work on all pages
+      // headline.textContent = "doof";
+      
     });
   });
 }

@@ -1,9 +1,17 @@
 .header {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 1rem;
+}
+
+.heading-primary {
+  grid-column: 3 / 7;
 }
 
 .icon-header {
+  grid-column: 10 / -1;
+  align-self: center;
   width: 8rem;
   fill: var(--font-color-light);
 }
+
